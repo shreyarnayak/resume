@@ -1,0 +1,129 @@
+/* Reset some default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    /* Light gray background */
+    color: #333;
+    /* Dark text color */
+    line-height: 1.6;
+}
+
+header {
+    background: #4CAF50;
+    /* Green background */
+    color: #fff;
+    /* White text */
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.linksec {
+    display: flex;
+    gap: 30px;
+    /* Space between links */
+}
+
+.linksec a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.linksec a:hover {
+    color: #ffeb3b;
+    /* Yellow on hover */
+}
+
+.tbl {
+    max-width: 800px;
+    /* Maximum width for the table */
+    margin: 40px auto;
+    /* Center the table */
+    background: #fff;
+    /* White background for the table */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    padding: 20px;
+    /* Padding inside the table */
+}
+
+.caption {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #4CAF50;
+    /* Green color for caption */
+}
+
+table {
+    width: 100%;
+    /* Full width */
+    border-collapse: collapse;
+    /* Remove space between borders */
+}
+
+th,
+td {
+    padding: 12px;
+    /* Padding for cells */
+    text-align: left;
+    /* Align text to the left */
+    border-bottom: 1px solid #ddd;
+    /* Bottom border for rows */
+}
+
+th {
+    background-color: #4CAF50;
+    /* Green background for header */
+    color: white;
+    /* White text for header */
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    /* Light gray on row hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #4CAF50;
+    /* Green background for footer */
+    color: white;
+    /* White text for footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .linksec {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .caption {
+        font-size: 1.5em;
+    }
+    th,
+    td {
+        font-size: 0.9em;
+        /* Smaller font size for smaller screens */
+    }
+}

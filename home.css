@@ -1,0 +1,84 @@
+/* Reset some default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #4CAF50;
+    /* Green background */
+    color: #fff;
+    /* White text */
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.linksec {
+    display: flex;
+    gap: 20px;
+    /* Space between links */
+}
+
+.linksec a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.linksec a:hover {
+    color: #ffeb3b;
+    /* Yellow on hover */
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4CAF50;
+    /* Green color */
+}
+
+.firstp p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: #555;
+    /* Darker gray for better readability */
+}
+
+strong {
+    color: #4CAF50;
+    /* Green for strong text */
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    .linksec {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

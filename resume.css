@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+}
+
+header {
+    background: black;
+    /* Green background */
+    color: #fff;
+    /* White text */
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.linksec {
+    display: flex;
+    gap: 20px;
+    /* Space between links */
+}
+
+.linksec a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.linksec a:hover {
+    color: #ffeb3b;
+    /* Yellow on hover */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    gap: 105px;
+}
+
+.head .text {
+    flex: 1;
+}
+
+.line {
+    height: 2px;
+    background-color: #333;
+    border: none;
+    margin: 20px 0;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
